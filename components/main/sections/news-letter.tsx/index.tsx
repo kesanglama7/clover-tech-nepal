@@ -53,7 +53,7 @@ export default function Newsletter() {
               <span className="text-primary italic">loop.</span>
             </h2>
             <p className="nl-sub font-body text-sm text-[var(--color-deep-forest-foreground)]/50 leading-relaxed max-w-sm">
-              Get occasional updates on what we're building, writing, and thinking about — no spam, unsubscribe anytime.
+              Get occasional updates on what we&apos;re building, writing, and thinking about — no spam, unsubscribe anytime.
             </p>
           </div>
 
@@ -111,10 +111,10 @@ export default function Newsletter() {
                 </div>
                 <div>
                   <p className="font-body text-sm font-semibold text-[var(--color-deep-forest-foreground)]">
-                    You're subscribed!
+                    You&apos;re subscribed!
                   </p>
                   <p className="font-body text-xs mt-0.5" style={{ color: "rgba(249,249,247,0.4)" }}>
-                    We'll be in touch soon.
+                    We&apos;ll be in touch soon.
                   </p>
                 </div>
               </div>
