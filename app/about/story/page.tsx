@@ -69,7 +69,7 @@ export default function OurStoryPage() {
         className="relative h-screen w-full overflow-hidden bg-[var(--color-background)]"
       >
         {/* Content behind the mask */}
-        <div className="absolute inset-0 flex items-center justify-center bg-[var(--color-deep-forest)]">
+        <div className="absolute inset-0 flex items-center justify-center bg-[var(--color-deep-forest)] py-12">
           <div className="relative z-10 max-w-5xl px-6 text-center">
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.35em] text-[var(--color-primary)]">
               Founded in 2022
@@ -153,74 +153,6 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* <section className="relative overflow-hidden px-6 py-28 md:py-36">
-        <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-120px" }}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-[var(--color-primary)]">
-              Chapter One
-            </p>
-
-            <h2 className="font-display text-5xl leading-tight md:text-7xl">
-              2022:
-              <br />
-              The beginning.
-            </h2>
-
-            <p className="mt-8 font-body text-lg leading-8 text-black/60">
-              Clover Tech Nepal was established in 2022 as a pioneering software
-              company with a shared vision of innovation, excellence, and
-              transformative digital solutions.
-            </p>
-
-            <p className="mt-5 font-body text-lg leading-8 text-black/60">
-              The company was initially founded by{" "}
-              <strong className="font-semibold text-[var(--color-deep-forest)]">
-                Bijay Lama
-              </strong>
-              , a Full Stack Developer, whose early vision helped shape the
-              company’s startup foundation.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-120px" }}
-            transition={{ duration: 0.7 }}
-            className="relative rounded-[2rem] bg-white p-6 shadow-[0_30px_100px_rgba(0,0,0,0.08)]"
-          >
-            <div className="rounded-[1.5rem] border border-black/10 p-8">
-              <div className="mb-8 flex items-center justify-between border-b border-black/10 pb-6">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.25em] text-black/40">
-                    Initial Founder
-                  </p>
-                  <h3 className="mt-2 font-display text-3xl">Bijay Lama</h3>
-                </div>
-
-                <span className="rounded-full bg-[var(--color-deep-forest)] px-4 py-2 text-xs font-bold text-white">
-                  2022
-                </span>
-              </div>
-               <div className="relative rounded-2xl bg-[var(--color-background)] overflow-hidden h-100">
-                <Image
-                    src="/assets/team/bijay.jpg"
-                    alt="Bijay Lama"
-                    width={1000}                    
-                    height={1000}
-                    className="object-cover"
-                />
-                </div>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
       <section className="bg-white px-6 py-28 md:py-36">
         <div className="mx-auto max-w-5xl">
           <div className="mb-16 max-w-3xl">
@@ -233,7 +165,7 @@ export default function OurStoryPage() {
             </h2>
 
             <p className="mt-6 font-body text-lg leading-8 text-black/60">
-              This is where Clover Tech was born. Four visionary co-founders united their expertise in development, mobile, design, and management to transform an early idea into a powerhouse team ready to build the future.
+              This is where Clover Tech was born. Five visionary co-founders united their expertise in development, mobile, design, and management to transform an early idea into a powerhouse team ready to build the future.
             </p>
           </div>
 
