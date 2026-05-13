@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import {
   Facebook,
   Twitter,
@@ -14,9 +14,9 @@ import {
   Mail,
   MapPin,
   Phone,
-} from "lucide-react";
+} from "lucide-react"
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const footerLinks = [
   {
@@ -49,35 +49,54 @@ const footerLinks = [
       { label: "FAQ", href: "/faq", newTab: true },
     ],
   },
-];
+]
 
 const socials = [
   { Icon: Facebook, href: "#" },
   { Icon: Twitter, href: "#" },
   { Icon: Linkedin, href: "#" },
   { Icon: Instagram, href: "#" },
-];
+]
 
 export default function Footer() {
-  const footerRef = useRef<HTMLElement>(null);
+  const footerRef = useRef<HTMLElement>(null)
 
   useGSAP(
     () => {
-      gsap.from(".footer-item", {
-        y: 30,
-        opacity: 0,
-        stagger: 0.08,
-        duration: 0.7,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 90%",
-          once: true,
+      if (!footerRef.current) return
+
+      const items = gsap.utils.toArray<HTMLElement>(".footer-item")
+
+      gsap.fromTo(
+        items,
+        {
+          y: 24,
+          autoAlpha: 0,
         },
-      });
+        {
+          y: 0,
+          autoAlpha: 1,
+          stagger: 0.08,
+          duration: 0.7,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: footerRef.current,
+            start: "top 95%",
+            once: true,
+          },
+        }
+      )
+
+      const refreshTimer = window.setTimeout(() => {
+        ScrollTrigger.refresh()
+      }, 300)
+
+      return () => {
+        window.clearTimeout(refreshTimer)
+      }
     },
     { scope: footerRef }
-  );
+  )
 
   return (
     <footer
@@ -215,5 +234,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {ChevronDown } from "lucide-react";
 import { SERVICES_DETAILED } from "@/lib/data/service";
+import Link from "next/link";
 
 export default function ServicesPage() {
   const [openId, setOpenId] = useState<string | null>(
@@ -165,9 +166,11 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <button className="inline-flex w-full items-center justify-center rounded-full bg-[var(--color-primary)] px-8 py-4 text-sm font-bold text-white transition-transform hover:scale-105 md:w-auto">
+            <Link href="/contact">
+              <button className="inline-flex w-full items-center justify-center rounded-full bg-[var(--color-primary)] px-8 py-4 text-sm font-bold text-white transition-transform hover:scale-105 md:w-auto cursor-pointer">
               Start Project
-            </button>
+              </button>
+            </Link>
           </div>
         </footer>
       </div>
