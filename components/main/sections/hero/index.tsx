@@ -205,7 +205,7 @@ const Hero = () => {
           >
             <Users size={16} className="text-[var(--color-primary)]" />
             <span className="text-xs font-body font-bold text-[var(--color-muted)]">
-              Trusted by <strong>15+</strong> happy clients
+              Trusted by <strong>10+</strong> happy clients
             </span>
           </motion.div>
 

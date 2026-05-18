@@ -8,9 +8,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { label: "Projects Delivered", value: 40, suffix: "+" },
+  { label: "Projects Delivered", value: 10, suffix: "+" },
   { label: "Lines of Code", value: 500, suffix: "K+" },
-  { label: "Happy Clients", value: 15, suffix: "" },
+  { label: "Happy Clients", value: 10, suffix: "" },
   { label: "Coffee Consumed", value: 1200, suffix: "+" },
 ];
 

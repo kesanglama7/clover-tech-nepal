@@ -229,7 +229,7 @@ export default function Footer() {
             className="font-body text-[11px] uppercase tracking-widest"
             style={{ color: "rgba(249,249,247,0.2)" }}
           >
-            Made with ♥ in Nepal
+            Made with ♥ by Clover Tech Nepal Pvt. Ltd.
           </p>
         </div>
       </div>

@@ -15,14 +15,14 @@ export const PROJECTS = [
     image: "/assets/portfolio/dcdiamond.png",
     role: "Retail UI/UX"
   },
-  {
-    id: "subha-dental",
-    title: "Subha Dental",
-    category: "Healthcare SaaS",
-    description: "An appointment booking system for dental clinics with dedicated interfaces for superadmins, doctors, and patients, emphasizing a 'Clinical Sanctuary' aesthetic.",
-    image: "/assets/portfolio/subha-dental.png",
-    role: "Health-Tech Solutions"
-  },
+  // {
+  //   id: "subha-dental",
+  //   title: "Subha Dental",
+  //   category: "Healthcare SaaS",
+  //   description: "An appointment booking system for dental clinics with dedicated interfaces for superadmins, doctors, and patients, emphasizing a 'Clinical Sanctuary' aesthetic.",
+  //   image: "/assets/portfolio/subha-dental.png",
+  //   role: "Health-Tech Solutions"
+  // },
   {
     id: "cozymeal",
     title: "CozyMeal",

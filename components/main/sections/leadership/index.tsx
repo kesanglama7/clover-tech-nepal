@@ -16,7 +16,7 @@ export default function LeaderShip() {
           className="flex flex-col gap-5"
         >
           <h2 className="text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
-            Meet our leadership
+            Meet our team
           </h2>
 
           <p className="text-base leading-7 text-gray-600">
@@ -28,7 +28,7 @@ export default function LeaderShip() {
               href="/executives"
               className="inline-block rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/75"
             >
-              Get to know our leadership
+              Get to know our team
             </Link>
           </div>
         </motion.div>
@@ -41,8 +41,8 @@ export default function LeaderShip() {
           className="relative overflow-hidden rounded-[1.5rem] bg-gray-100 aspect-square"
         >
           <Image
-            src="/assets/team/sudeep.jpg"
-            alt="Sudeep Bajracharya - CEO of Clover Tech Nepal"
+            src="/assets/team/fallback.jpg"
+            alt="Clover Tech Nepal"
             fill
             className="object-cover object-top"
           />
